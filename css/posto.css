@@ -32,7 +32,7 @@
   width: 3.5rem;
   height: 3.5rem;
   border-radius: 50%;
-  background: var(--cor-header);
+  background: var(--cor-destaque);
   display: flex;
   align-items: center;
   justify-content: center;

@@ -41,7 +41,7 @@
   position: absolute;
   bottom: 1rem;
   left: 1rem;
-  background-color: var(--cor-header);
+  background-color: var(--cor-destaque);
   color: #fff;
   padding: 0.5rem 1rem;
   border-radius: 0.75rem;

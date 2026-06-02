@@ -30,7 +30,7 @@
 }
 
 .cadastro-tipo-btn.is-selected {
-  box-shadow: 0 0 0 4px var(--cor-header);
+  box-shadow: 0 0 0 4px var(--cor-destaque);
   transform: scale(1.02);
 }
 
@@ -47,11 +47,11 @@
 }
 
 .cadastro-tipo-btn__icon--comum {
-  background-color: var(--cor-header);
+  background-color: var(--cor-destaque);
 }
 
 .cadastro-tipo-btn__icon--inst {
-  background-color: var(--cor-cal-header);
+  background-color: var(--cor-primaria);
 }
 
 .cadastro-tipo-btn__title {

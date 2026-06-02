@@ -4,13 +4,12 @@
 @import url('https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;500;600;700&display=swap');
 
 :root {
-  --cor-header: #d65454;
+  --cor-primaria:#13b9ed;
+  --cor-destaque: #002b6b;
+
   --cor-fundo: #fce4ec;
   --cor-fundo-claro: #fde2f3;
-  --cor-mapa-header: #f0c24d;
-  --cor-cal-header: #9589d3;
   --cor-cal-celula: #f8bbd0;
-  --cor-destaque: #d65454;
   --cor-borda: #c95b6a;
   --cor-botao-inscrito: #4caf50;
   --raio-card: 1rem;
@@ -33,10 +32,10 @@ body {
 }
 
 /* Utilitários de cor (complementam Tailwind) */
-.bg-hub-header { background-color: var(--cor-header); }
+.bg-hub-header { background-color: var(--cor-destaque); }
 .bg-hub-page { background-color: var(--cor-fundo); }
-.bg-mapa-header { background-color: var(--cor-mapa-header); }
-.bg-cal-header { background-color: var(--cor-cal-header); }
+.bg-mapa-header { background-color: var(--cor-primaria); }
+.bg-cal-header { background-color: var(--cor-primaria); }
 .bg-cal-cell { background-color: var(--cor-cal-celula); }
 .text-hub-destaque { color: var(--cor-destaque); }
 .border-hub { border-color: var(--cor-borda); }
@@ -67,7 +66,7 @@ body {
 
 /* ---------- Cabeçalho ---------- */
 .hub-site-header {
-  background-color: var(--cor-header);
+  background-color: var(--cor-destaque);
   color: #fff;
   box-shadow: 0 2px 8px rgba(0, 0, 0, 0.12);
   position: sticky;
@@ -289,7 +288,7 @@ body {
   width: 2.25rem;
   height: 2.25rem;
   border-radius: 50%;
-  background: var(--cor-header);
+  background: var(--cor-destaque);
   color: #fff;
   font-size: 0.875rem;
   font-weight: 700;
@@ -309,7 +308,6 @@ body {
 /* ---------- Popover (mapa + calendário) ---------- */
 .hub-popover {
   position: absolute;
-  z-index: 30;
   min-width: 11rem;
   max-width: 14rem;
   padding: 0.625rem 0.75rem;
@@ -325,12 +323,20 @@ body {
 }
 
 .pin-mapa:hover .hub-popover,
-.pin-mapa:focus-within .hub-popover,
-.cal-evento-mini-wrap:hover .hub-popover,
-.cal-evento-mini-wrap.is-popover-open .hub-popover {
+.pin-mapa:focus-within .hub-popover
+
+{
   opacity: 1;
   visibility: visible;
    transform: translateY(0px) rotate(45deg);
+  pointer-events: auto;
+}
+
+.cal-evento-mini-wrap:hover .hub-popover,
+.cal-evento-mini-wrap.is-popover-open .hub-popover{
+  opacity: 1;
+  visibility: visible;
+  transform: translateY(0px);
   pointer-events: auto;
 }
 
@@ -369,7 +375,7 @@ body {
   font-size: 0.65rem;
   font-weight: 700;
   color: #fff;
-  background: var(--cor-header);
+  background: var(--cor-destaque);
   padding: 0.25rem 0.5rem;
   border-radius: 0.25rem;
   text-decoration: none;
@@ -380,7 +386,7 @@ body {
 }
 
 .hub-popover--posto {
-  border-color: var(--cor-header);
+  border-color: var(--cor-destaque);
 }
 
 .pin-mapa .hub-popover {
@@ -517,7 +523,7 @@ body {
 }
 
 .hub-btn--primary {
-  background-color: var(--cor-header);
+  background-color: var(--cor-destaque);
   color: #fff;
   padding: 0.75rem 1.5rem;
 }
@@ -560,7 +566,7 @@ body {
 .hub-input:focus,
 .hub-select:focus {
   outline: none;
-  box-shadow: 0 0 0 2px var(--cor-header);
+  box-shadow: 0 0 0 2px var(--cor-destaque);
 }
 
 .hub-select--modal {
@@ -599,7 +605,7 @@ body {
 }
 
 .hub-card-auth-header {
-  background-color: var(--cor-header);
+  background-color: var(--cor-destaque);
   color: #fff;
   text-align: center;
   padding: 1.5rem 1rem;

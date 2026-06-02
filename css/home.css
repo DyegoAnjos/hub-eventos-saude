@@ -10,6 +10,7 @@
 .page-home .hub-widgets {
   display: grid;
   grid-template-columns: 1fr;
+  align-items: start;
   gap: 1.5rem;
   margin-bottom: 2rem;
 }
@@ -19,6 +20,7 @@
     grid-template-columns: 1fr 1fr;
   }
 }
+
 
 .hub-panel-header--input {
   gap: 0.5rem;
@@ -253,19 +255,19 @@
 
 .cal-evento-mini {
   width: 100%;
-  background: var(--cor-header);
+  background: var(--cor-destaque);
   color: white;
   font-family: inherit;
-  font-size: 0.5rem;
+  font-size: 0.6rem;
   line-height: 1.1;
   padding: 2px 3px;
   border-radius: 3px;
   border: none;
   cursor: pointer;
   overflow: hidden;
-  text-overflow: ellipsis;
   white-space: nowrap;
   text-align: left;
+  text-wrap: wrap;
 }
 
 .cal-evento-mini:hover {
@@ -311,7 +313,7 @@
 
 .eventos-titulo__regiao:focus {
   background: #fff;
-  box-shadow: 0 0 0 2px var(--cor-header);
+  box-shadow: 0 0 0 2px var(--cor-destaque);
   border-radius: 0.25rem;
 }
 
