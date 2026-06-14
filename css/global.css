@@ -308,6 +308,7 @@ body {
 /* ---------- Popover (mapa + calendário) ---------- */
 .hub-popover {
   position: absolute;
+  z-index: 9999999;
   min-width: 11rem;
   max-width: 14rem;
   padding: 0.625rem 0.75rem;
@@ -338,6 +339,7 @@ body {
   visibility: visible;
   transform: translateY(0px);
   pointer-events: auto;
+  bottom: 100%;
 }
 
 .hub-popover__tipo {
@@ -399,6 +401,7 @@ body {
   left: 0;
   right: 0;
   top: calc(100% + 4px);
+  overflow: visible;
 }
 
 .hub-dropdown {

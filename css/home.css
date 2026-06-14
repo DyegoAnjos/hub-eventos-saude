@@ -218,7 +218,7 @@
   padding: 0.2rem;
   display: flex;
   flex-direction: column;
-  overflow: hidden;
+  overflow: visible;
 }
 
 .cal-dia__eventos {
